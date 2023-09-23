@@ -1,0 +1,26 @@
+{
+  "tabWidth": 2,
+  "printWidth": 150,
+  "importOrder": [
+    "^react$",
+    "<THIRD_PARTY_MODULES>",
+    "^~/app",
+    "^~/assets",
+    "^~/components",
+    "^~/config",
+    "^~/context",
+    "^~/features",
+    "^~/hooks",
+    "^~/lib",
+    "^~/pages",
+    "^~/styles"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderCaseInsensitive": true,
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindFunctions": ["cn", "cva"]
+}
