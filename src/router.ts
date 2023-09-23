@@ -1,6 +1,4 @@
 // Generouted, changes to this file will be overriden
-
- 
 import { components, hooks, utils } from "@generouted/react-router/client";
 
 export type Path = `/`;
