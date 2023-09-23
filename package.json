@@ -8,6 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -48,8 +50,8 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "npx prettier --write",
-      "npx eslint --fix"
+      "npm run lint",
+      "npm run prettier:fix"
     ]
   },
   "browserslist": [
