@@ -47,4 +47,25 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+  .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  #skip-link:focus {
+    clip: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    color: #5c5c5c;
+    background: #ffffff;
+    padding: 10px;
+    z-index: 10000;
+    transition: none;
+  }
 }
