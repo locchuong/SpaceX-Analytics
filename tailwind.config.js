@@ -48,6 +48,8 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        google: "#4285f4",
+        github: "#24292f",
       },
       borderRadius: {
         lg: `var(--radius)`,
