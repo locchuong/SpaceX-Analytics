@@ -13,6 +13,7 @@
     "^~/hooks",
     "^~/lib",
     "^~/pages",
+    "^~/router",
     "^~/styles"
   ],
   "importOrderSeparation": true,
