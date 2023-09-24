@@ -62,7 +62,7 @@ function LoginForm() {
 
   function onAuthFulfilled(user: UserCredential | undefined) {
     if (user) {
-      navigate("/protected");
+      navigate("/");
     }
   }
 

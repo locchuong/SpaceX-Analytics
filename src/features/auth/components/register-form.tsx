@@ -56,7 +56,7 @@ function RegisterForm() {
         await updateProfile({
           displayName: `${values.firstName} ${values.lastName}`,
         });
-        navigate("/protected");
+        navigate("/");
       }
     });
   }
