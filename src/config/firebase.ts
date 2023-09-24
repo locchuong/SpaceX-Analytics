@@ -1,6 +1,6 @@
 import { getAnalytics } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
-import { browserLocalPersistence, getAuth, GoogleAuthProvider, setPersistence } from "firebase/auth";
+import { browserLocalPersistence, getAuth, setPersistence } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -18,5 +18,3 @@ export const firebaseAuth = getAuth(app);
 setPersistence(firebaseAuth, browserLocalPersistence);
 
 export const firebaseAnalytics = getAnalytics(app);
-
-export const googleProvider = new GoogleAuthProvider();
