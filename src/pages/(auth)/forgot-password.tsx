@@ -1,4 +1,4 @@
-import PasswordResetForm from "~/features/auth/components/password-reset-form";
+import { PasswordResetForm } from "~/features/auth";
 
 function ForgotPassword() {
   return <PasswordResetForm />;

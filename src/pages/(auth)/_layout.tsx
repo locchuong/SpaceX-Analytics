@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import AuthBackgroundImage from "~/assets/images/auth-background.webp";
 import SpaceXLogo from "~/assets/logos/spacex.svg?react";
 
-import CompanyPolicy from "~/features/auth/components/company-policy";
+import { CompanyPolicy } from "~/features/auth";
 
 import { cn } from "~/lib/tailwind";
 
