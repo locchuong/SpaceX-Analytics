@@ -14,7 +14,8 @@
     "^~/lib",
     "^~/pages",
     "^~/router",
-    "^~/styles"
+    "^~/styles",
+    "^\\.{1,2}"
   ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,

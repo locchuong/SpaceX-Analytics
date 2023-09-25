@@ -68,10 +68,25 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        flash: {
+          from: {
+            background: "transparent",
+          },
+          to: {
+            background: "rgba( 255, 255, 255, 0.2)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        flash: "flash 0.5s ease-out",
+      },
+      transitionTimingFunction: {
+        exponential: "cubic-bezier(.19,1,.22,1)",
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(closest-side, var(--tw-gradient-stops))",
       },
     },
   },
