@@ -13,7 +13,7 @@ const Nav = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(({ 
           className={cn(
             "relative mx-3 text-sm font-semibold uppercase text-white",
             "before:absolute before:-bottom-0.5 before:right-0 before:h-px before:w-0 before:bg-white before:transition-[width] before:duration-200 before:ease-linear",
-            "hover:before:right-auto, hover:before:left-0 hover:before:w-full",
+            "hover:before:left-0 hover:before:right-auto hover:before:w-full",
           )}
           aria-label="Profile Page"
         >
@@ -26,7 +26,7 @@ const Nav = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(({ 
           className={cn(
             "relative mx-3 text-sm font-semibold uppercase text-white",
             "before:absolute before:-bottom-0.5 before:right-0 before:h-px before:w-0 before:bg-white before:transition-[width] before:duration-200 before:ease-linear",
-            "hover:before:right-auto, hover:before:left-0 hover:before:w-full",
+            "hover:before:left-0 hover:before:right-auto hover:before:w-full",
           )}
           aria-label="Learn about the Astronauts currently in space"
         >
@@ -39,7 +39,7 @@ const Nav = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>(({ 
           className={cn(
             "relative mx-3 text-sm font-semibold uppercase text-white",
             "before:absolute before:-bottom-0.5 before:right-0 before:h-px before:w-0 before:bg-white before:transition-[width] before:duration-200 before:ease-linear",
-            "hover:before:right-auto, hover:before:left-0 hover:before:w-full",
+            "hover:before:left-0 hover:before:right-auto hover:before:w-full",
           )}
           aria-label="Learn about the International Space Station"
         >

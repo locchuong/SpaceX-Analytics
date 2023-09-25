@@ -16,8 +16,11 @@ const buttonVariants = cva(
       variant: {
         contained: "bg-zinc-800 text-white hover:bg-zinc-800/90 focus-visible:ring-slate-800",
         outlined: cn(
-          "border-neutral-300 bg-transparent text-zinc-800 hover:bg-zinc-800 hover:text-white",
-          "dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black",
+          "relative border-neutral-300 bg-transparent text-zinc-800 hover:bg-zinc-800 hover:text-white",
+          "dark:border-white dark:text-white dark:hover:bg-transparent dark:hover:text-black",
+          // Dark Mode Hover Animation
+          "dark:before:absolute dark:before:left-0 dark:before:top-0 dark:before:-z-10 dark:before:h-0 dark:before:w-full dark:before:bg-white dark:before:transition-[height] dark:before:duration-300 dark:before:ease-out",
+          "dark:hover:before:bottom-0 dark:hover:before:right-0 dark:hover:before:top-auto dark:hover:before:h-full",
         ),
       },
       size: {

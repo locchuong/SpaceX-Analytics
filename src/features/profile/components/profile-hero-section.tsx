@@ -12,8 +12,11 @@ import { Section, SectionBackground, SectionContent } from "~/features/base-ui";
 
 import { cn } from "~/lib/tailwind";
 
+import { useNavigate } from "~/router";
+
 function ProfileHeroSection() {
   const [user] = useAuthState(firebaseAuth);
+  const navigate = useNavigate();
 
   const [animateIn, setAnimateIn] = React.useState<boolean>(true);
 
@@ -38,6 +41,7 @@ function ProfileHeroSection() {
           variant="outlined"
           type="button"
           onAnimationEnd={() => setAnimateIn(false)}
+          onClick={() => navigate("/astronauts")}
         >
           Learn more
         </Button>
