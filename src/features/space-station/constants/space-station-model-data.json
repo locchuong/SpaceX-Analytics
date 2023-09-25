@@ -1,0 +1,27 @@
+[
+  {
+    "field": "Weight",
+    "value": 925000,
+    "units": "LBs"
+  },
+  {
+    "field": "Active Duty",
+    "value": "109 x 73",
+    "units": "Feet"
+  },
+  {
+    "field": "Orbit Altitude",
+    "value": 260,
+    "units": "Miles"
+  },
+  {
+    "field": "Orbit Speed",
+    "value": 17500,
+    "units": "Miles / Hr"
+  },
+  {
+    "field": "Crew Capacity",
+    "value": 6,
+    "units": "Astronauts"
+  }
+]
