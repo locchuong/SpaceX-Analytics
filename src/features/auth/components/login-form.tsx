@@ -16,9 +16,9 @@ import { Separator } from "~/components/seperator";
 
 import { firebaseAuth } from "~/config/firebase";
 
-import { convertErrorCodeToUserMessage } from "~/features/auth/constants/auth-errors";
-
 import { Link, useNavigate } from "~/router";
+
+import { convertErrorCodeToUserMessage } from "../constants/auth-errors";
 
 const formSchema = z.object({
   email: z.string().nonempty("Email is required.").email("Please enter a valid email address."),
@@ -161,4 +161,4 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+export { LoginForm };

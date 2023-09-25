@@ -12,9 +12,9 @@ import { Input } from "~/components/input";
 
 import { firebaseAuth } from "~/config/firebase";
 
-import { convertErrorCodeToUserMessage } from "~/features/auth/constants/auth-errors";
-
 import { Link, useNavigate } from "~/router";
+
+import { convertErrorCodeToUserMessage } from "../constants/auth-errors";
 
 const formSchema = z
   .object({
@@ -168,4 +168,4 @@ function RegisterForm() {
   );
 }
 
-export default RegisterForm;
+export { RegisterForm };

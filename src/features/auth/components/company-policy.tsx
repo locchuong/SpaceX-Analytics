@@ -11,4 +11,4 @@ function CompanyPolicy() {
     </p>
   );
 }
-export default CompanyPolicy;
+export { CompanyPolicy };

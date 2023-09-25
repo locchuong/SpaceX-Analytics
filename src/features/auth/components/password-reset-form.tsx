@@ -15,9 +15,9 @@ import { Input } from "~/components/input";
 
 import { firebaseAuth } from "~/config/firebase";
 
-import { convertErrorCodeToUserMessage } from "~/features/auth/constants/auth-errors";
-
 import { Link } from "~/router";
+
+import { convertErrorCodeToUserMessage } from "../constants/auth-errors";
 
 const formSchema = z.object({
   email: z.string().nonempty("Email is required.").email("Please enter a valid email address."),
@@ -99,4 +99,4 @@ function PasswordResetForm() {
   );
 }
 
-export default PasswordResetForm;
+export { PasswordResetForm };
