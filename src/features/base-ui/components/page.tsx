@@ -3,7 +3,7 @@ import * as React from "react";
 import { cn } from "~/lib/tailwind";
 
 const Page = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("relative overflow-hidden", className)} {...props} />
+  <div ref={ref} className={cn("relative overflow-hidden duration-700 ease-out animate-in fade-in-0", className)} {...props} />
 ));
 
 Page.displayName = "Page";
