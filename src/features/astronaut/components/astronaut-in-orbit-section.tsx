@@ -107,7 +107,7 @@ function AstronautInOrbitSection() {
         {/* Table Filters */}
         <div className="flex w-full space-x-3">
           <Select value={nationality} onValueChange={setNationality}>
-            <SelectTrigger className="flex-1">
+            <SelectTrigger className="flex-1" aria-label="Filter astronauts by nationality">
               <SelectLabel>Nationality</SelectLabel>
               <SelectValue />
             </SelectTrigger>
@@ -123,7 +123,7 @@ function AstronautInOrbitSection() {
             </SelectContent>
           </Select>
           <Select value={craft} onValueChange={setCraft}>
-            <SelectTrigger className="flex-1">
+            <SelectTrigger className="flex-1" aria-label="Filter astronauts by space craft">
               <SelectLabel>Space Craft</SelectLabel>
               <SelectValue />
             </SelectTrigger>
@@ -136,7 +136,7 @@ function AstronautInOrbitSection() {
             </SelectContent>
           </Select>
           <Select value={launchDate} onValueChange={setLaunchDate}>
-            <SelectTrigger className="flex-1">
+            <SelectTrigger className="flex-1" aria-label="Filter astronauts by launch date">
               <SelectLabel>Launch Date</SelectLabel>
               <SelectValue />
             </SelectTrigger>
@@ -148,7 +148,7 @@ function AstronautInOrbitSection() {
             </SelectContent>
           </Select>
           <Select value={landingDate} onValueChange={setLandingDate}>
-            <SelectTrigger className="flex-1">
+            <SelectTrigger className="flex-1" aria-label="Filter astronauts by landing date">
               <SelectLabel>Landing Date</SelectLabel>
               <SelectValue />
             </SelectTrigger>
