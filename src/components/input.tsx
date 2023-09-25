@@ -8,7 +8,7 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
 
 const inputVariants = cva(
   cn(
-    "peer relative flex h-12 w-full border border-neutral-200 bg-transparent px-[10px] py-1 pb-[10px] pt-4 text-sm transition-colors dark:border-white",
+    "peer relative flex h-12 w-full border border-neutral-200 bg-transparent px-[10px] py-1 pb-[10px] pt-4 text-sm transition-colors dark:border-white dark:text-white",
     "placeholder:text-muted-foreground",
     "disabled:cursor-not-allowed disabled:opacity-50",
     "focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-neutral-300 dark:focus-visible:ring-blue-400",

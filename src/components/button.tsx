@@ -15,7 +15,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         contained: "bg-zinc-800 text-white hover:bg-zinc-800/90 focus-visible:ring-slate-800",
-        outlined: "border-neutral-300 bg-transparent text-zinc-800 hover:bg-zinc-800 hover:text-white",
+        outlined: cn(
+          "border-neutral-300 bg-transparent text-zinc-800 hover:bg-zinc-800 hover:text-white",
+          "dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black",
+        ),
       },
       size: {
         md: "h-12 px-4 py-2 text-sm",
