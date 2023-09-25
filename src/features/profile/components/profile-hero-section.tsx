@@ -37,13 +37,13 @@ function ProfileHeroSection() {
           Analytics.
         </p>
         <Button
-          className={cn("ease-in-out animate-in fade-in-0 slide-in-from-bottom-16 fill-mode-forwards", animateIn && "duration-700")}
+          className={cn("w-full max-w-xs ease-in-out animate-in fade-in-0 slide-in-from-bottom-16 fill-mode-forwards", animateIn && "duration-700")}
           variant="outlined"
           type="button"
           onAnimationEnd={() => setAnimateIn(false)}
           onClick={() => navigate("/astronauts")}
         >
-          Learn more
+          Get Started
         </Button>
       </SectionContent>
     </Section>

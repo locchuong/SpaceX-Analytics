@@ -1,16 +1,21 @@
 import * as React from "react";
 
+import SpaceXLogo from "~/assets/logos/spacex.svg?react";
+
 import { ScrollDirection, useWindowScroll } from "~/hooks/useWindowScroll";
 
 import { cn } from "~/lib/tailwind";
 
-const Header = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, children, ...props }, ref) => {
+import { Nav } from "./nav";
+import { ProfileMenu } from "./profile-menu";
+
+const Header = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => {
   const { scrollDirection, scrollPositionY } = useWindowScroll();
 
   return (
     <header
       ref={ref}
-      className={cn("fixed top-0 z-20 flex h-24 w-full items-center overflow-hidden bg-transparent px-12", className)}
+      className={cn("fixed left-0 top-0 z-50 flex h-24 w-full items-center bg-transparent px-12", className)}
       role="navigation"
       {...props}
     >
@@ -30,12 +35,24 @@ const Header = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElem
       {/* Header content */}
       <div
         className={cn(
-          "relative flex h-full w-full max-w-[1400px] items-center transition-opacity delay-100 duration-200 ease-linear",
+          "container relative flex h-full w-full items-center transition-opacity delay-100 duration-200 ease-linear",
           // Hide Nav Contents
-          scrollDirection === ScrollDirection.down && "opacity-0",
+          scrollDirection === ScrollDirection.down && "pointer-events-none opacity-0",
         )}
       >
-        {children}
+        <SpaceXLogo className="relative mr-10 h-auto w-[210px] text-white" />
+        <Nav />
+      </div>
+
+      {/* Header right content */}
+      <div
+        className={cn(
+          "absolute right-12 transition-opacity delay-100 duration-200 ease-linear",
+          // Hide Nav Contents
+          scrollDirection === ScrollDirection.down && "pointer-events-none opacity-0",
+        )}
+      >
+        <ProfileMenu />
       </div>
     </header>
   );

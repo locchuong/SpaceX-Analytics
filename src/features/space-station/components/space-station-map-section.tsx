@@ -18,7 +18,7 @@ function SpaceStationMapSection() {
 
   return (
     <Section className="h-auto">
-      <SectionContent className="container relative flex h-full items-center justify-center space-x-10 bg-gradient-radial from-white/10 to-transparent">
+      <SectionContent className="container relative flex h-full items-start justify-center space-x-10 bg-gradient-radial from-white/10 to-transparent">
         <div className="w-full max-w-xl space-y-6">
           <p className="text-4xl font-bold uppercase text-white">Spot The Station</p>
           <p className="text-base text-white">

@@ -1,11 +1,9 @@
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Outlet, useLocation } from "react-router-dom";
 
-import SpaceXLogo from "~/assets/logos/spacex.svg?react";
-
 import { firebaseAuth } from "~/config/firebase";
 
-import { Footer, Header, Nav } from "~/features/base-ui";
+import { Footer, Header } from "~/features/base-ui";
 
 import { Navigate } from "~/router";
 
@@ -35,10 +33,7 @@ function ProtectedLayout() {
   // Authenticated
   return (
     <div className="dark h-full min-h-screen w-full bg-black">
-      <Header>
-        <SpaceXLogo className="relative mr-10 h-auto w-[210px] text-white" />
-        <Nav />
-      </Header>
+      <Header />
 
       <main id="main" className="relative min-h-screen bg-black">
         <Outlet />
