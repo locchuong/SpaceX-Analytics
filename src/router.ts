@@ -1,7 +1,7 @@
 // Generouted, changes to this file will be overriden
 import { components, hooks, utils } from "@generouted/react-router/client";
 
-export type Path = `/` | `/forgot-password` | `/login` | `/sign-up`;
+export type Path = `/` | `/astronauts` | `/forgot-password` | `/iss-location` | `/login` | `/sign-up`;
 
 export type Params = {};
 

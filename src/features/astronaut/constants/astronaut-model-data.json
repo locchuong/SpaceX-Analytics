@@ -1,0 +1,32 @@
+[
+  {
+    "field": "Total Astronauts",
+    "value": 9103,
+    "units": "Astronauts"
+  },
+  {
+    "field": "Active Duty",
+    "value": 274,
+    "units": "Astronauts"
+  },
+  {
+    "field": "Total",
+    "value": 9103,
+    "units": "Astronauts"
+  },
+  {
+    "field": "Time In Space",
+    "value": 8240693,
+    "units": "Minutes"
+  },
+  {
+    "field": "Longest Stay",
+    "value": 3,
+    "units": "Years"
+  },
+  {
+    "field": "Furthest Distance",
+    "value": 5062492,
+    "units": "Miles"
+  }
+]
