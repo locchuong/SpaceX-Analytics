@@ -1,13 +1,14 @@
 import { Outlet } from "react-router-dom";
+import AppProvider from "~/providers/app-provider";
 
-function App() {
+import { SkipContentButton } from "~/components/skip-content";
+
+function AppLayout() {
   return (
-    <>
-      <a id="skip-link" className="visually-hidden" aria-label="Skip to content" href="#main">
-        Skip to content
-      </a>
+    <AppProvider>
+      <SkipContentButton />
       <Outlet />
-    </>
+    </AppProvider>
   );
 }
-export default App;
+export default AppLayout;
