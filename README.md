@@ -92,6 +92,7 @@ This script is used to open the Cypress Test Runner for end-to-end (E2E) testing
 - [⚙️ Project Configuration](docs/project-configuration.md)
 - [🗄️ Project Structure](docs/project-structure.md)
 - [🧱 Styling](docs/styling.md)
+- [🛣️ Routing](docs/routing.md)
 - [📡 API Layer](docs/api-layer.md)
 - [🗃️ State Management](docs/state-management.md)
 - [🧪 Testing](docs/testing.md)
