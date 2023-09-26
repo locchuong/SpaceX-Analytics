@@ -27,6 +27,7 @@
     }
   },
   "include": ["src"],
+  "exclude": ["cypress.config.ts", "cypress", "node_modules"],
   "types": ["vite-plugin-svgr/client", "vitest/globals"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
