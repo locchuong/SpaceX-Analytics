@@ -1,11 +1,12 @@
 import * as React from "react";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { AuthError, UserCredential } from "firebase/auth";
+import { AuthError, signInAnonymously, UserCredential } from "firebase/auth";
 import { useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
+import UserCircleIcon from "~/assets/icons/user-circle.svg?react";
 import GithubLogo from "~/assets/logos/github.svg?react";
 import GoogleLogo from "~/assets/logos/google.svg?react";
 
@@ -86,6 +87,10 @@ function LoginForm() {
     signInWithGithub().then(onAuthFulfilled);
   }
 
+  function handleSignInAsAnonymous() {
+    signInAnonymously(firebaseAuth).then(onAuthFulfilled);
+  }
+
   return (
     <div className="flex h-full flex-col justify-center">
       <div className="min-h-[548px]">
@@ -146,6 +151,10 @@ function LoginForm() {
             <Button className="group relative hover:bg-github" type="button" variant="outlined" onClick={() => handleSignInWithGithub()}>
               <GithubLogo className="absolute left-4 h-6 w-6 transition-all [&>path]:transition-colors group-hover:[&>path]:fill-white" />
               Continue with Github
+            </Button>
+            <Button className="group relative" type="button" variant="outlined" onClick={() => handleSignInAsAnonymous()}>
+              <UserCircleIcon className="absolute left-4 h-6 w-6 transition-all [&>path]:transition-colors group-hover:[&>path]:fill-white" />
+              Continue as Anonymous
             </Button>
           </div>
           {/* Create Account */}

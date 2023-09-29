@@ -29,7 +29,7 @@ function ProfileMenu() {
       <DropdownMenuTrigger asChild>
         <button className="flex items-center space-x-4" type="button">
           <img className="h-10 w-10 rounded-full border-2 border-zinc-500" src={FakeUserImage} alt="User Profile" />
-          <p className="text-base font-medium text-white ">{currentUser?.displayName}</p>
+          <p className="text-base font-medium text-white ">{currentUser?.displayName ?? "Unknown"}</p>
           <CaretDownIcon className="h-4 w-4 text-white" />
         </button>
       </DropdownMenuTrigger>
